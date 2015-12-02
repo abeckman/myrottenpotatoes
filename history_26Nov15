@@ -1,0 +1,216 @@
+    1  ls
+    2  git clone git@github.com/abeckman/hw-sinatra-saas-hangperson
+    3  git clone git@github.com:abeckman/hw-sinatra-saas-hangperson
+    4  ls
+    5  cd hw-sinatra-saas-hangperson/
+    6  ls
+    7  more Gemfile
+    8  more README.md 
+    9  less README.md 
+   10  grep create README.md 
+   11  less README.md 
+   12  history
+   13  exit
+   14  cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
+   15  ls
+   16  ~/.dropbox-dist/dropboxd
+   17  ln -s /home/ubuntu/Dropbox/ ~/workspace/
+   18  ls
+   19  ls -l Dropbox/
+   20  cd ~/ && wget https://linux.dropbox.com/packages/dropbox.py
+   21  ls
+   22  chmod +x dropbox.py
+   23  cd /bin && sudo ln -s ~/dropbox.py
+   24  dropbox start
+   25  history
+   26  ls
+   27  cd ..
+   28  ls
+   29  cd 
+   30  ls
+   31  cd workspace/
+   32  cd rott
+   33  cd rottenpotatoes-rails-intro/
+   34  ls
+   35  cd ..
+   36  cd
+   37  ls
+   38  history > history_13Nov15
+   39  cd workspace/
+   40  ls
+   41  cd rottenpotatoes-rails-intro/
+   42  ls
+   43  git status
+   44  bundle 
+   45  bundle install
+   46  vim app/assets/stylesheets/default.css 
+   47  git status
+   48  vim app/views/movies/index.html.haml 
+   49  history
+   50  vim app/views/movies/index.html.haml 
+   51  git add -a
+   52  git add -A
+   53  git commit -am "first changes to index view"
+   54  git push master origin
+   55  grep git ../history_7Oct15 
+   56  grep git ../hw-sinatra-saas-hangperson/history_*
+   57  git push heroku master
+   58  vi app/controllers/movies_controller.rb 
+   59  git add -A
+   60  git commit -am "fixed hilite"
+   61  git push heroku master
+   62  vi app/views/movies/index.html.haml 
+   63  vi app/models/movie.rb 
+   64  vi app/views/movies/index.html.haml 
+   65  vi app/controllers/movies_controller.rb 
+   66  vi app/views/movies/index.html.haml 
+   67  git add -A
+   68  git commit -am "part way through adding ratings"
+   69  git push heroku master
+   70  diff app/views/movies/index.html.haml ../hw-bdd-cucumber/rottenpotatoes/app/views/movies/index.html.haml 
+   71  diff app/controllers/movies_controller.rb ../hw-bdd-cucumber/rottenpotatoes/app/controllers/movies_controller.rb 
+   72  vi app/controllers/movies_controller.rb 
+   73  git add -A
+   74  git commit -am "most of the way"
+   75  git push heroku master
+   76  diff app/views/movies/index.html.haml ../hw-bdd-cucumber/rottenpotatoes/app/views/movies/index.html.haml 
+   77  vi app/views/movies/index.html.haml 
+   78  diff app/controllers/movies_controller.rb ../hw-bdd-cucumber/rottenpotatoes/app/controllers/movies_controller.rb 
+   79  vim app/controllers/movies_controller.rb 
+   80  git add -A
+   81  git commit -am "fix typo"
+   82  git push heroku master
+   83  vi app/models/movie.rb 
+   84  vim app/controllers/movies_controller.rb 
+   85  history
+   86  history > history_16Nov15
+   87  cd ..
+   88  cd hw-bdd-cucumber/
+   89  ls
+   90  cd rottenpotatoes/
+   91  ls
+   92  bundle install --without-production
+   93  bundle install --withoutjproduction
+   94  bundle install --without_production
+   95  bundle install --withoutproduction
+   96  man bundle
+   97  bundle help install
+   98  bundle install --without production
+   99  ls
+  100  less ../../rottenpotatoes-rails-intro/history_16Nov15 
+  101  git status
+  102  git push heroku master
+  103  ls
+  104  ls features/
+  105  autotest
+  106  set AUTOFEATURE=true
+  107  autotest
+  108  autotest set AUTOFEATURE=true
+  109  set
+  110  set |grep AUTO
+  111  vim Gemfile
+  112  cd ../../myrottenpotatoes
+  113  diff Gemfile ../hw-bdd-cucumber/rottenpotatoes/Gemfile |less
+  114  vim ../hw-bdd-cucumber/rottenpotatoes/Gemfile
+  115  pwd
+  116  bundle install --without production
+  117  ls
+  118  rails generate cucumber:install capybara
+  119  rails generate cucumber_rails_training_wheels:install
+  120  rake db:test:prepare
+  121  ls -l ../myrottenpotatoes.orig/features/
+  122  cp ../myrottenpotatoes.orig/features/Add* features/
+  123  less features/AddMovie.feature 
+  124  ls -l ../myrottenpotatoes.orig/features/step_definitions/
+  125  diff features/step_definitions/web_steps.rb ../myrottenpotatoes.orig/features/step_definitions/web_steps.rb |less
+  126  diff features/step_definitions/web_steps.rb ../myrottenpotatoes.orig/features/step_definitions/web_steps.rb 
+  127  more ../myrottenpotatoes.orig/features/step_definitions/movie_steps.rb 
+  128  cucumber features/AddMovie.feature 
+  129  vi features/support/paths.rb 
+  130  ls ../myrottenpotatoes.orig/features/
+  131  cp ../myrottenpotatoes.orig/features/sear* features
+  132  less features/search_tmdb.feature 
+  133  vi app/views/movies/index.html.haml 
+  134  vim features/support/paths.rb 
+  135  find . -name routes.rb -print
+  136  vi config/routes.rb 
+  137  vi app/controllers/movies_controller.rb 
+  138  cd ../hw-bdd-cucumber/
+  139  cd rottenpotatoes/
+  140  less features/step_definitions/
+  141  less features/sort_movie_list.feature 
+  142  vim features/step_definitions/movie_steps.rb 
+  143  git status
+  144  git add features/step_definitions/movie_steps.rb  log/test.log 
+  145  git commit -am "part 1 mod" tag part_1
+  146  git tag part_1 -am "part 1 mod"
+  147  git status
+  148  cucumber features/filter_movie_list.feature 
+  149  vim features/support/paths.rb 
+  150  vim features/step_definitions/movie_steps.rb 
+  151  history > history_22Nov15
+  152  more history_22Nov15
+  153  git add -a
+  154  git add -A
+  155  git status
+  156  rm -rf tmp
+  157  ls -l cache
+  158  ls -l
+  159  ls -l ../cache
+  160  du -s *
+  161  git add -a
+  162  git add -A
+  163  git commit -am "completed hw3"
+  164  git push origin
+  165  cd ..
+  166  cd hw-sinatra-saas-hangperson/
+  167  git push origin
+  168  git status
+  169  git add -A
+  170  git commit -am "add history"
+  171  git push origin
+  172  cd ..
+  173  cd rottenpotatoes-rails-intro/
+  174  ls
+  175  git status
+  176  git add history_16Nov15 
+  177  git commit -am "add history"
+  178  git push origin
+  179  cd ..
+  180  history |grep git
+  181  git clone git@github.com:abeckman/hw-bdd-tdd-cycle.git
+  182  cd hw-bdd-tdd-cycle/
+  183  ls
+  184  cd rottenpotatoes/
+  185  ls
+  186  history |grep production
+  187  bundle install --without production
+  188  cd ../../myrottenpotatoes
+  189  ls spec
+  190  ls
+  191  vi Gemfile
+  192  vim Gemfile
+  193  bundle install --without production
+  194  rails generate rspec:install
+  195  mkdir spec/controllers
+  196  ls ../myrottenpotatoes.orig/spec/controllers
+  197  cp ../myrottenpotatoes.orig/spec/controllers/mov* spec/controllers/
+  198  vim spec/controllers/mov*
+  199  vim spec/spec_helper.rb 
+  200  vim spec/controllers/mov*
+  201  vim spec/spec_helper.rb 
+  202  vim spec/controllers/mov*
+  203  vim app/models/movie.rb 
+  204  vim app/controllers/movies_controller.rb 
+  205  vim spec/controllers/mov*
+  206  ls app/views/movies/sear*
+  207  ls ../myrottenpotatoes.orig/app/views/sear*
+  208  ls ../myrottenpotatoes.orig/app/views/
+  209  ls ../myrottenpotatoes.orig/app/views/movies/
+  210  vim spec/controllers/mov*
+  211  vim spec/models/movie_spec.rb 
+  212  vim app/models/movie.rb 
+  213  vim spec/models/movie_spec.rb 
+  214  vim app/models/movie.rb 
+  215  vim spec/models/movie_spec.rb 
+  216  history > history_26Nov15
