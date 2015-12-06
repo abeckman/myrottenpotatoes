@@ -1,9 +1,8 @@
 source 'https://rubygems.org'
 
 ruby '2.2.2'
-
-# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.4'
+# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
@@ -23,17 +22,20 @@ group :development, :test do
   gem 'web-console', '~> 2.0'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
-  gem 'autotest'
-  gem 'database_cleaner'
-  gem 'capybara'
+  gem 'database_cleaner', '1.4.1'
+  gem 'capybara', '2.4.4'
   gem 'launchy'
-  gem 'rspec-rails'
+  gem 'rspec-rails', '3.3.2'
+  gem 'ZenTest', '4.11.0'
+  gem 'autotest-rails'
+  gem 'rspec-autotest'
+  gem 'factory_girl_rails'
+  gem 'simplecov', :require => false
 end
 
 group :test do
-  gem 'cucumber-rails'
+  gem 'cucumber-rails', :require => false
   gem 'cucumber-rails-training-wheels'
-  gem 'autotest-rails'
 end
 
 group :production do

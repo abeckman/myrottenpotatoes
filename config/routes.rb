@@ -1,8 +1,10 @@
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
-Myrottenpotatoes::Application.routes.draw do
-  root 'movies#index'
+Rottenpotatoes::Application.routes.draw do
   resources :movies
+#  root 'movies#index'
+  root :to => redirect('movies')
+  get 'search_by_director/:id' => 'movies#search_director', :as => :search_by_director
 # Route that posts 'Search TMDb' form
   post '/movies/search_tmdb'
 end

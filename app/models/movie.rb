@@ -16,7 +16,10 @@ class Movie < ActiveRecord::Base
       end
     end
   end
-    
+
   def self.find_with_same_director(id)
+    directed = Movie.find(id).director
+    return {} if directed.blank?
+    Movie.where(director: "#{directed}")
   end
 end
